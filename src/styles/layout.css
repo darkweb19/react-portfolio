@@ -1,0 +1,7 @@
+.layout-container {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	position: relative;
+	border: 1px solid green;
+}

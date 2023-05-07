@@ -1,0 +1,26 @@
+@font-face {
+	font-family: "NTR";
+	font-weight: 200;
+	font-display: fallback;
+	src: url("../public/fonts/NTR-Regular.ttf") format("truetype");
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.App {
+	text-align: center;
+	font-family: "NTR", sans-serif;
+	height: 100vh;
+	width: 100%;
+	border: 1px solid red;
+	color: var(--white);
+	background-color: var(--navy);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}

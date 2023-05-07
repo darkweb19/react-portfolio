@@ -1,0 +1,54 @@
+.statement-container {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	/* border: 1px solid red; */
+}
+.image img {
+	width: 40%;
+	margin-top: 7rem;
+	border-radius: 20px;
+}
+
+.row {
+	display: flex;
+	/* border: 1px solid yellow; */
+	text-align: center;
+	height: 60%;
+}
+
+.statement {
+	border-radius: 10px;
+	width: 80%;
+	padding: 17px;
+	margin-left: 15rem;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	background-color: var(--lightest-navy);
+}
+
+.statement p {
+	/* border: 1px solid green; */
+	padding: 10px;
+	height: auto;
+	font-size: 20px;
+}
+.statement p a {
+	text-decoration: none;
+	color: var(--green-bright);
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.skills {
+	height: 100%;
+}
+
+.skills h1 {
+	margin-right: 250px;
+	/* border: 1px solid red; */
+}
+.cards {
+	display: flex;
+	justify-content: space-evenly;
+}
