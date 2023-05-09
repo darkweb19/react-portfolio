@@ -1,27 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/sidenav.css";
+import { useLocation } from "react-router-dom";
 
 function SideNav() {
+	const location = useLocation();
+	console.log(location);
 	return (
 		<div className="side-nav-container">
 			<div className="logo">
 				<img src="./logo.png" alt="cannot get" />
 			</div>
 			<div className="nav-links">
-				<Link className="links" to="/home">
+				<Link location={location} className="links" to="/home">
 					/Home
 				</Link>
-				<Link className="links" to="/education">
+				<Link location={location} className="links" to="/education">
 					/Education
 				</Link>
-				<Link className="links" to="/statement">
+				<Link location={location} className="links" to="/statement">
 					/Statement
 				</Link>
-				<Link className="links" to="/experience">
+				<Link location={location} className="links" to="/experience">
 					/Experience
 				</Link>
-				<Link className="links" to="/creation">
+				<Link location={location} className="links" to="/creation">
 					/software-creation
 				</Link>
 			</div>

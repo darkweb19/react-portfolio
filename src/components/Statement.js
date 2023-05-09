@@ -1,10 +1,17 @@
 import React from "react";
 import "../styles/statement.css";
 import Cardios from "./Cardios";
+import { motion } from "framer-motion";
 
 function Statement() {
 	return (
-		<div class="statement-container" data-aos="fade-up">
+		<motion.div
+			class="statement-container"
+			data-aos="fade-up"
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1, transition: { duration: 1.3 } }}
+			exit={{ opacity: 0 }}
+		>
 			<div className="row">
 				<div class="statement">
 					<h1 class="subtitle">Personal Statement</h1>
@@ -35,7 +42,7 @@ function Statement() {
 					<Cardios lang="MongoDb" />
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
 
