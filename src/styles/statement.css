@@ -48,7 +48,15 @@
 	margin-right: 250px;
 	/* border: 1px solid red; */
 }
-.cards {
+
+.card-list {
 	display: flex;
-	justify-content: space-evenly;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	border-radius: 8px;
+	padding: 20px;
+	width: 100%;
 }

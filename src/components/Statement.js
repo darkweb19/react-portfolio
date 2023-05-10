@@ -2,8 +2,31 @@ import React from "react";
 import "../styles/statement.css";
 import Cardios from "./Cardios";
 import { motion } from "framer-motion";
-
+import image from "../../src/images/my-image.png";
 function Statement() {
+	const container = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.5,
+			},
+		},
+	};
+
+	const item = {
+		hidden: { opacity: 0 },
+		show: { opacity: 1 },
+	};
+
+	const skills = [
+		"JavaScript",
+		"Python",
+		"React.js",
+		"Node.js",
+		"Express.js",
+		"Mongo",
+	];
 	return (
 		<motion.div
 			class="statement-container"
@@ -11,6 +34,7 @@ function Statement() {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1, transition: { duration: 1.3 } }}
 			exit={{ opacity: 0 }}
+			transition={{ ease: "easeOut", duration: 2 }}
 		>
 			<div className="row">
 				<div class="statement">
@@ -28,19 +52,27 @@ function Statement() {
 					</p>
 				</div>
 				<div class="image">
-					<img src="/my-image.png" alt="error" />
+					<img src={image} alt="error" />
 				</div>
 			</div>
 			<div className="skills">
 				<h1>Technologies I've been working with :</h1>
-				<div className="cards">
-					<Cardios lang="JavaScript" />
-					<Cardios lang="Python" />
-					<Cardios lang="React.js" />
-					<Cardios lang="Node.js" />
-					<Cardios lang="Expres.js" />
-					<Cardios lang="MongoDb" />
-				</div>
+
+				<motion.ol
+					variants={container}
+					initial="hidden"
+					animate="show"
+					style={{ listStyleType: "none" }}
+					className="card-list"
+				>
+					{skills.map((items) => (
+						<motion.li variants={item}>
+							<div className="card">
+								<Cardios lang={items} />
+							</div>
+						</motion.li>
+					))}
+				</motion.ol>
 			</div>
 		</motion.div>
 	);
