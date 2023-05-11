@@ -8,7 +8,7 @@ function Home() {
 		<motion.div
 			className="home-container"
 			initial={{ opacity: 0 }}
-			animate={{ opacity: 1, transition: { duration: 2 } }}
+			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
 			transition={{ ease: easeIn, duration: 2 }}
 		>
