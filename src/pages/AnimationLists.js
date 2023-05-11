@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Cardios from "../components/Cardios";
+import "../styles/animation.css";
 
 function AnimationLists() {
 	const container = {

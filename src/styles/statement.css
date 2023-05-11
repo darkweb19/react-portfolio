@@ -24,14 +24,17 @@
 	margin-left: 15rem;
 	margin-top: 3rem;
 	margin-bottom: 1rem;
+	box-shadow: rgba(35, 53, 84, 1) 0px 5px 25px;
+
 	background-color: var(--lightest-navy);
 }
 
 .statement p {
 	/* border: 1px solid green; */
-	padding: 10px;
+	padding: 20px;
 	height: auto;
 	font-size: 20px;
+	text-align: justify;
 }
 .statement p a {
 	text-decoration: none;
@@ -47,16 +50,4 @@
 .skills h1 {
 	margin-right: 250px;
 	/* border: 1px solid red; */
-}
-
-.card-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.card {
-	border-radius: 8px;
-	padding: 20px;
-	width: 100%;
 }
