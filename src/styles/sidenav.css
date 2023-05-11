@@ -1,5 +1,6 @@
 .side-nav-container {
 	width: 20%;
+	border: 2px solid red;
 }
 
 .logo img {
@@ -24,4 +25,21 @@
 	margin-left: 2rem;
 	font-size: 20px;
 	color: var(--white);
+}
+
+.socials {
+	height: 20vh;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+}
+
+.social-links {
+	cursor: pointer;
+	margin: 2px;
+	width: 10%;
+	padding: 10px;
+	position: relative;
+	height: 40px;
+	right: 6rem;
 }

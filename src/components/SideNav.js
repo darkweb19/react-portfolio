@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/sidenav.css";
 import { useLocation } from "react-router-dom";
 import logo from "../images/mine.png";
+import Socials from "./Socials";
 
 function SideNav() {
 	const location = useLocation();
@@ -28,6 +29,10 @@ function SideNav() {
 				<Link location={location} className="links" to="/creation">
 					/software-creation
 				</Link>
+			</div>
+
+			<div className="socials">
+				<Socials />
 			</div>
 		</div>
 	);
