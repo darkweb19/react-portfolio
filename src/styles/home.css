@@ -6,7 +6,9 @@
 .intro {
 	margin-top: 5rem;
 	width: 90%;
-	height: 34vh;
+	position: relative;
+	right: 10px;
+	height: 80vh;
 }
 
 .intro h1 {
