@@ -8,27 +8,29 @@ import Socials from "./Socials";
 function SideNav() {
 	const location = useLocation();
 
+	const navLinks = [
+		"/Home",
+		"/Education",
+		"/Statement",
+		"/Experience",
+		"/Software-creation",
+	];
+
 	return (
 		<div className="side-nav-container">
 			<div className="logo">
 				<img src={logo} alt="cannot get" />
 			</div>
 			<div className="nav-links">
-				<Link location={location} className="links" to="/home">
-					/Home
-				</Link>
-				<Link location={location} className="links" to="/education">
-					/Education
-				</Link>
-				<Link location={location} className="links" to="/statement">
-					/Statement
-				</Link>
-				<Link location={location} className="links" to="/experience">
-					/Experience
-				</Link>
-				<Link location={location} className="links" to="/creation">
-					/software-creation
-				</Link>
+				{navLinks.map((item) => (
+					<Link
+						location={location}
+						className="links"
+						to={item.toLowerCase()}
+					>
+						{item}
+					</Link>
+				))}
 			</div>
 
 			<div className="socials">
