@@ -1,5 +1,46 @@
 .home-container {
 	width: 80%;
 	height: 100%;
-	border: 1px solid red;
+}
+
+.intro {
+	margin-top: 5rem;
+	width: 90%;
+	height: 34vh;
+}
+
+.intro h1 {
+	font-size: 4rem;
+	position: relative;
+	top: 5.3rem;
+}
+
+.intro p {
+	width: 50%;
+	position: relative;
+	font-size: 32px;
+	color: var(--slate);
+	margin-left: 21%;
+}
+
+.intro h1 strong {
+	color: var(--green-bright);
+}
+
+.about {
+	color: var(--slate);
+	width: 95%;
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+	font-size: 20px;
+}
+
+.about div {
+	position: relative;
+	width: 50%;
+	text-align: start;
+	bottom: 5rem;
+	left: 3rem;
+	padding: 30px;
 }
