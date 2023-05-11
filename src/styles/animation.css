@@ -1,0 +1,12 @@
+.card-list {
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	border-radius: 8px;
+	padding: 20px;
+	width: 100%;
+}
