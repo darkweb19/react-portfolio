@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/sidenav.css";
 import { useLocation } from "react-router-dom";
-import logo from "../images/logo.png";
+import logo from "../images/mine.png";
 
 function SideNav() {
 	const location = useLocation();
