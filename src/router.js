@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-
 import Home from "./components/Home";
 import Education from "./components/Education";
 import Experience from "./components/Experience";
@@ -11,7 +10,6 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <App />,
-
 		children: [
 			{
 				path: "/home",
