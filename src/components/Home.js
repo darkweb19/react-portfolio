@@ -12,18 +12,15 @@ function Home() {
 			exit={{ opacity: 0 }}
 			transition={{ ease: easeIn, duration: 2 }}
 		>
-			<div className="intro">
+			<div className="intro" onClick={() => console.log("SAy hello")}>
 				<h1>
 					Hi! , <strong>Sujan</strong> here .
 				</h1>
-				<p>
+				<div className="typing">
 					<Typewriter
 						onInit={(typewriter) => {
 							typewriter
 								.typeString("I create stuff sometimes.")
-								.callFunction(() => {
-									console.log("String typed out!");
-								})
 								.pauseFor(2000)
 								.deleteAll()
 								.start();
@@ -32,7 +29,8 @@ function Home() {
 							loop: true,
 						}}
 					/>
-				</p>
+				</div>
+
 				<div className="about">
 					<div>
 						I am a software engineer and student from Nepal. I have
@@ -44,5 +42,4 @@ function Home() {
 		</motion.div>
 	);
 }
-
 export default Home;
