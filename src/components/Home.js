@@ -1,14 +1,15 @@
 import React from "react";
 import "../styles/home.css";
-import { motion } from "framer-motion";
+import { motion, easeIn } from "framer-motion";
 
 function Home() {
 	return (
 		<motion.div
 			className="home-container"
 			initial={{ opacity: 0 }}
-			animate={{ opacity: 1, transition: { duration: 1.3 } }}
+			animate={{ opacity: 1, transition: { duration: 2 } }}
 			exit={{ opacity: 0 }}
+			transition={{ ease: easeIn, duration: 2 }}
 		>
 			<div className="intro">
 				<h1>Hey , Sujan here .</h1>
