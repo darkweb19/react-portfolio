@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 				element: <Experience />,
 			},
 			{
-				path: "/creation",
+				path: "/software-creation",
 				element: <Creation />,
 			},
 			{
