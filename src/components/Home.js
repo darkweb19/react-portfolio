@@ -39,6 +39,7 @@ function Home() {
 						Intelligence , IoT and everything in between.
 					</div>
 				</div>
+				<div className=""></div>
 			</div>
 		</motion.div>
 	);
