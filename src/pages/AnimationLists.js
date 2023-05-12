@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Cardios from "../components/Cardios";
 import "../styles/animation.css";
+import { v4 } from "uuid";
 
 function AnimationLists() {
 	const container = {
@@ -18,14 +19,16 @@ function AnimationLists() {
 		hidden: { opacity: 0 },
 		show: { opacity: 1 },
 	};
+	//for uuid
+	const uuid = () => v4();
 
 	const skills = [
-		"JavaScript",
-		"Python",
-		"React.js",
-		"Node.js",
-		"Express.js",
-		"Mongo",
+		{ id: uuid(), skill: "JavaScript ES6+" },
+		{ id: uuid(), skill: "Python" },
+		{ id: uuid(), skill: "React.js" },
+		{ id: uuid(), skill: "Node.js" },
+		{ id: uuid(), skill: "Express.js" },
+		{ id: uuid(), skill: "Mongo NoSQL DB" },
 	];
 	//returns skill lists through animation
 	return (
@@ -37,9 +40,9 @@ function AnimationLists() {
 			className="card-list"
 		>
 			{skills.map((items) => (
-				<motion.li variants={item}>
+				<motion.li variants={item} key={items.id}>
 					<div className="card">
-						<Cardios lang={items} />
+						<Cardios lang={items.skill} />
 					</div>
 				</motion.li>
 			))}
