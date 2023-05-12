@@ -30,12 +30,12 @@
 }
 
 .about {
-	color: var(--slate);
 	width: 95%;
 	display: flex;
 	justify-content: center;
 	padding: 30px;
 	font-size: 20px;
+	color: var(--light-slate);
 }
 
 .about div {

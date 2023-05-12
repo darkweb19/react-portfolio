@@ -22,6 +22,7 @@ function SideNav() {
 				<img src={logo} alt="cannot get" />
 			</div>
 			<div className="nav-links">
+				{/* side nav lists are looped */}
 				{navLinks.map((item) => (
 					<Link
 						location={location}

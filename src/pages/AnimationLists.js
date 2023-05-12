@@ -27,7 +27,7 @@ function AnimationLists() {
 		"Express.js",
 		"Mongo",
 	];
-
+	//returns skill lists through animation
 	return (
 		<motion.ol
 			variants={container}

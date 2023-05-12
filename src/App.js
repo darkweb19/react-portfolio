@@ -18,6 +18,7 @@ function App() {
 
 	return (
 		<div className="App">
+			{/* animate presence is for ease in animation while changing to pages */}
 			<AnimatePresence>
 				<Layouts />
 			</AnimatePresence>

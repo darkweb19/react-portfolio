@@ -17,6 +17,7 @@ function Home() {
 					Hi! , <strong>Sujan</strong> here .
 				</h1>
 				<div className="typing">
+					{/* typing animation */}
 					<Typewriter
 						onInit={(typewriter) => {
 							typewriter
@@ -30,7 +31,7 @@ function Home() {
 						}}
 					/>
 				</div>
-
+				{/* div for about section */}
 				<div className="about">
 					<div>
 						I am a software engineer and student from Nepal. I have

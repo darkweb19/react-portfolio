@@ -1,6 +1,7 @@
 import React from "react";
 
 function PersonalStatement({ image }) {
+	//returns divs of personal statements
 	return (
 		<div className="row">
 			<div className="statement">

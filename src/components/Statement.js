@@ -15,9 +15,11 @@ function Statement() {
 			exit={{ opacity: 0 }}
 			transition={{ ease: "easeOut", duration: 2 }}
 		>
+			{/* div for personal statement */}
 			<PersonalStatement image={image} />
 			<div className="skills">
 				<h1>Technologies I've been working with :</h1>
+				{/* card animation for skills */}
 				<AnimationLists />
 			</div>
 		</motion.div>
