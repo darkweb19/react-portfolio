@@ -9,8 +9,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
+	//setting state for loaders
 	const [loader, setloader] = useState(true);
-
 	if (loader) {
 		setTimeout(() => {
 			setloader(false);
@@ -27,8 +27,10 @@ function App() {
 	return (
 		<div className="App">
 			{loader ? (
+				//this is for loading loaders
 				<Loaders />
 			) : (
+				//main app components
 				<AnimatePresence>
 					<Layouts />
 				</AnimatePresence>

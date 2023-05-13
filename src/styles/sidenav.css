@@ -1,10 +1,11 @@
 .side-nav-container {
 	width: 20%;
-	border: 2px solid red;
+	border: 1px solid red;
 }
 
 .logo img {
-	margin-top: 10px;
+	margin-top: 30px;
+	margin-right: 50px;
 	width: 35%;
 	border-radius: 20%;
 	border: 1px solid var(--slate);
@@ -17,14 +18,14 @@
 	gap: 20px;
 	flex-direction: column;
 	justify-content: space-evenly;
-	text-align: start;
+	text-align: center;
 }
 
 .links {
 	/* border: 1px solid red; */
 	font-weight: 500;
 	width: 40%;
-	text-align: center;
+	text-align: start;
 	margin-left: 2rem;
 	font-size: 18px;
 	color: var(--green-bright);
