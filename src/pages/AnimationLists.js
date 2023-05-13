@@ -23,12 +23,12 @@ function AnimationLists() {
 	const uuid = () => v4();
 
 	const skills = [
-		{ id: uuid(), skill: "JavaScript ES6+" },
+		{ id: uuid(), skill: "JavaScript" },
 		{ id: uuid(), skill: "Python" },
 		{ id: uuid(), skill: "React.js" },
 		{ id: uuid(), skill: "Node.js" },
 		{ id: uuid(), skill: "Express.js" },
-		{ id: uuid(), skill: "Mongo NoSQL DB" },
+		{ id: uuid(), skill: "Mongo" },
 	];
 	//returns skill lists through animation
 	return (

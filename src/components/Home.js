@@ -14,7 +14,7 @@ function Home() {
 		>
 			<div className="intro" onClick={() => console.log("SAy hello")}>
 				<h1>
-					Hi! , <strong>Sujan</strong> here .
+					Hi! , <strong>Sujan</strong> here.
 				</h1>
 				<div className="typing">
 					{/* typing animation */}
@@ -23,11 +23,7 @@ function Home() {
 							typewriter
 								.typeString("I create stuff sometimes.")
 								.pauseFor(2000)
-								.deleteAll()
 								.start();
-						}}
-						options={{
-							loop: true,
 						}}
 					/>
 				</div>

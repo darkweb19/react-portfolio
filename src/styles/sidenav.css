@@ -21,10 +21,18 @@
 }
 
 .links {
+	/* border: 1px solid red; */
 	font-weight: 500;
+	width: 40%;
+	text-align: center;
 	margin-left: 2rem;
 	font-size: 18px;
 	color: var(--green-bright);
+}
+
+.links:hover {
+	color: var(--white);
+	text-decoration: none;
 }
 
 .socials {

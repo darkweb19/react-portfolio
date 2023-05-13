@@ -1,13 +1,21 @@
 import "./App.css";
+import Loaders from "./components/Loaders";
 import Layouts from "./layouts/Layouts";
 import "./styles/global.css";
 import { AnimatePresence } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
+	const [loader, setloader] = useState(true);
+
+	if (loader) {
+		setTimeout(() => {
+			setloader(false);
+		}, 2500);
+	}
 
 	//automatically redirects to home page if pathname == / so there is no / path in out website
 	useEffect(() => {
@@ -18,10 +26,13 @@ function App() {
 
 	return (
 		<div className="App">
-			{/* animate presence is for ease in animation while changing to pages */}
-			<AnimatePresence>
-				<Layouts />
-			</AnimatePresence>
+			{loader ? (
+				<Loaders />
+			) : (
+				<AnimatePresence>
+					<Layouts />
+				</AnimatePresence>
+			)}
 		</div>
 	);
 }
