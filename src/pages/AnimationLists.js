@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Cardios from "../components/Cardios";
 import "../styles/animation.css";
 import { v4 } from "uuid";
+import { FaReact, FaJs, FaPython, FaNodeJs } from "react-icons/fa";
+import { SiExpress, SiMongodb } from "react-icons/si";
 
 function AnimationLists() {
 	const container = {
@@ -23,12 +25,12 @@ function AnimationLists() {
 	const uuid = () => v4();
 
 	const skills = [
-		{ id: uuid(), skill: "JavaScript" },
-		{ id: uuid(), skill: "Python" },
-		{ id: uuid(), skill: "React.js" },
-		{ id: uuid(), skill: "Node.js" },
-		{ id: uuid(), skill: "Express.js" },
-		{ id: uuid(), skill: "Mongo" },
+		{ id: uuid(), skill: "JavaScript", icon: <FaJs /> },
+		{ id: uuid(), skill: "Python", icon: <FaPython /> },
+		{ id: uuid(), skill: "React.js", icon: <FaReact /> },
+		{ id: uuid(), skill: "Node.js", icon: <FaNodeJs /> },
+		{ id: uuid(), skill: "Express.js", icon: <SiExpress /> },
+		{ id: uuid(), skill: "Mongo", icon: <SiMongodb /> },
 	];
 	//returns skill lists through animation
 	return (
@@ -42,7 +44,7 @@ function AnimationLists() {
 			{skills.map((items) => (
 				<motion.li variants={item} key={items.id}>
 					<div className="card">
-						<Cardios lang={items.skill} />
+						<Cardios lang={items.skill} icon={items.icon} />
 					</div>
 				</motion.li>
 			))}

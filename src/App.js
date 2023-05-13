@@ -9,6 +9,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
+
 	//setting state for loaders
 	const [loader, setloader] = useState(true);
 	if (loader) {
