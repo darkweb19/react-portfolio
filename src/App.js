@@ -10,7 +10,7 @@ function App() {
 	const location = useLocation();
 	const navigate = useNavigate();
 
-	//setting state for loaders
+	//setting state for pre loaders
 	const [loader, setloader] = useState(true);
 	if (loader) {
 		setTimeout(() => {

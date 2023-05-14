@@ -1,16 +1,12 @@
 .container {
 	display: flex;
+	height: 9vh;
 	width: 80%;
 	margin: 1rem;
 	padding: 10px;
 	justify-content: space-evenly;
 	border-radius: 10px;
 	background-color: var(--lightest-navy);
-}
-
-.container h4 {
-	text-align: center;
-	/* border: 1px solid red; */
 }
 
 .container h3 {

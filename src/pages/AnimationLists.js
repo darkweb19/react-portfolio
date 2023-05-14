@@ -21,6 +21,7 @@ function AnimationLists() {
 		hidden: { opacity: 0 },
 		show: { opacity: 1 },
 	};
+
 	//for uuid
 	const uuid = () => v4();
 
@@ -32,6 +33,7 @@ function AnimationLists() {
 		{ id: uuid(), skill: "Express.js", icon: <SiExpress /> },
 		{ id: uuid(), skill: "Mongo", icon: <SiMongodb /> },
 	];
+
 	//returns skill lists through animation
 	return (
 		<motion.ol

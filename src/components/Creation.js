@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/creation.css";
 import { motion } from "framer-motion";
+import Carousel from "./Carousel";
 
 function Creation() {
 	return (
@@ -10,7 +11,7 @@ function Creation() {
 			animate={{ opacity: 1, transition: { duration: 1.3 } }}
 			exit={{ opacity: 0 }}
 		>
-			Creations of Software
+			<Carousel />
 		</motion.div>
 	);
 }
