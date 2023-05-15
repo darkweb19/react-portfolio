@@ -22,6 +22,25 @@ function SideNav() {
 		{ id: uuid(), link: "/Software-creation" },
 	];
 
+	const socials = [
+		{
+			social: <GitHubIcon sx={{ fontSize: 30 }} color="primary" />,
+			link: "https://github.com/darkweb19",
+		},
+		{
+			social: <LinkedInIcon sx={{ fontSize: 30 }} color="primary" />,
+			link: "https://www.linkedin.com/in/sujan-shrestha3220/",
+		},
+		{
+			social: <InstagramIcon sx={{ fontSize: 30 }} color="primary" />,
+			link: "https://instagram.com/sujansthaa/",
+		},
+		{
+			social: <CoffeeIcon sx={{ fontSize: 30 }} color="primary" />,
+			link: "https://",
+		},
+	];
+
 	return (
 		<div className="side-nav-container">
 			<div className="logo">
@@ -40,32 +59,11 @@ function SideNav() {
 					</Link>
 				))}
 			</div>
-
+			{/* for follow up links */}
 			<div className="socials">
-				<Socials
-					social={
-						<GitHubIcon sx={{ fontSize: 30 }} color="primary" />
-					}
-					link="https://github.com/darkweb19"
-				/>
-				<Socials
-					social={
-						<LinkedInIcon sx={{ fontSize: 30 }} color="primary" />
-					}
-					link="https://www.linkedin.com/in/sujan-shrestha3220/"
-				/>
-				<Socials
-					social={
-						<InstagramIcon sx={{ fontSize: 30 }} color="primary" />
-					}
-					link="https://instagram.com/sujansthaa/"
-				/>
-				<Socials
-					social={
-						<CoffeeIcon sx={{ fontSize: 30 }} color="primary" />
-					}
-					link="https://"
-				/>
+				{socials.map((item) => (
+					<Socials social={item.social} link={item.link} />
+				))}
 			</div>
 		</div>
 	);
