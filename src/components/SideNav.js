@@ -5,6 +5,10 @@ import { useLocation } from "react-router-dom";
 import logo from "../images/mine.png";
 import Socials from "./Socials";
 import { v4 } from "uuid";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import CoffeeIcon from "@mui/icons-material/Coffee";
 
 function SideNav() {
 	const location = useLocation();
@@ -38,7 +42,30 @@ function SideNav() {
 			</div>
 
 			<div className="socials">
-				<Socials />
+				<Socials
+					social={
+						<GitHubIcon sx={{ fontSize: 30 }} color="primary" />
+					}
+					link="https://github.com/darkweb19"
+				/>
+				<Socials
+					social={
+						<LinkedInIcon sx={{ fontSize: 30 }} color="primary" />
+					}
+					link="https://www.linkedin.com/in/sujan-shrestha3220/"
+				/>
+				<Socials
+					social={
+						<InstagramIcon sx={{ fontSize: 30 }} color="primary" />
+					}
+					link="https://instagram.com/sujansthaa/"
+				/>
+				<Socials
+					social={
+						<CoffeeIcon sx={{ fontSize: 30 }} color="primary" />
+					}
+					link="https://"
+				/>
 			</div>
 		</div>
 	);
