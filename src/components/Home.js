@@ -12,6 +12,7 @@ function Home() {
 			exit={{ opacity: 0 }}
 			transition={{ ease: easeIn, duration: 2 }}
 		>
+			<h1>Home /-</h1>
 			<div className="intro" onClick={() => console.log("SAy hello")}>
 				<h1>
 					Hi! , <strong>Sujan</strong> here.

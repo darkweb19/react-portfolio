@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/creation.css";
 import { motion } from "framer-motion";
-import Carousel from "./Carousel";
+
+import Carousels from "./Carousel";
+// import dalle from "../images/Dall-E.png";
 
 function Creation() {
 	return (
@@ -11,7 +13,8 @@ function Creation() {
 			animate={{ opacity: 1, transition: { duration: 1.3 } }}
 			exit={{ opacity: 0 }}
 		>
-			<Carousel />
+			<h1>My creations/-</h1>
+			<Carousels />
 		</motion.div>
 	);
 }
