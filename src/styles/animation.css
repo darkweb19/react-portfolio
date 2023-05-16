@@ -1,12 +1,13 @@
 .card-list {
 	display: flex;
+	width: 90%;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .card {
 	border-radius: 8px;
-	padding: 20px;
+	padding: 10px;
 	display: flex;
 	text-align: center;
 	width: 70%;
