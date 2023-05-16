@@ -2,6 +2,9 @@
 	width: 80%;
 	height: 100%;
 }
+.intro {
+	width: 90%;
+}
 
 .intro h1 {
 	font-size: 4rem;
@@ -28,7 +31,7 @@
 	flex-direction: column;
 	position: relative;
 	justify-content: center;
-	left: 20.3rem;
+	left: 16.8rem;
 }
 
 .about-section {
@@ -43,7 +46,6 @@
 
 .gmail {
 	width: 12%;
-	/* border: 1px solid red; */
 	position: relative;
 	bottom: 30px;
 	left: 40px;
