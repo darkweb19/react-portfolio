@@ -9,6 +9,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import CoffeeIcon from "@mui/icons-material/Coffee";
+import CopyRight from "./CopyRight";
 
 function SideNav() {
 	const location = useLocation();
@@ -69,6 +70,7 @@ function SideNav() {
 					/>
 				))}
 			</div>
+			<CopyRight />
 		</div>
 	);
 }

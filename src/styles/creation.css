@@ -4,7 +4,6 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 1px solid red;
 	justify-content: space-around;
 }
 .creation-container h1 {
