@@ -27,8 +27,8 @@ function Education() {
 				start: "July 2020",
 				end: "Current...",
 			},
-			levels: "St Lawrence College ",
-			place: "Little Flower Sec School ",
+			levels: "Bachelor's Degree",
+			place: "St Lawrence College ",
 			desc: "Currently  I am studying my Bachelor's Degree in Computer Science and Infortmation Technology  in Tribhuwan University.",
 		},
 	];
