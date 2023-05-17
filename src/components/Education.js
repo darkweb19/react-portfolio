@@ -11,6 +11,7 @@ function Education() {
 			exit={{ opacity: 0 }}
 		>
 			<h1>Educations /-</h1>
+			<div className=""></div>
 		</motion.div>
 	);
 }

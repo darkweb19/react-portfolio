@@ -61,8 +61,12 @@ function SideNav() {
 			</div>
 			{/* for follow up links */}
 			<div className="socials">
-				{socials.map((item) => (
-					<Socials social={item.social} link={item.link} />
+				{socials.map((item, index) => (
+					<Socials
+						key={index}
+						social={item.social}
+						link={item.link}
+					/>
 				))}
 			</div>
 		</div>
