@@ -2,7 +2,82 @@
 	width: 80%;
 	display: flex;
 	justify-content: center;
-
 	height: 100%;
-	border: 1px solid red;
+}
+.education {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.education h1 {
+	position: relative;
+	bottom: 2rem;
+	font-size: 2rem;
+	height: 8vh;
+}
+
+.education-section {
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	width: 90%;
+}
+
+.education-row {
+	display: flex;
+	max-height: 30%;
+	width: 90%;
+	overflow: hidden;
+}
+
+.duration {
+	width: 20%;
+	display: flex;
+	color: var(--white);
+	justify-content: center;
+	font-size: 17px;
+	font-weight: 600;
+	align-items: center;
+}
+.college {
+	padding: 0 0 0 50px;
+	height: 90%;
+	width: 70%;
+	border-left: 2px solid var(--slate);
+}
+.college h4 {
+	margin-block-start: 0em;
+	text-align: start;
+	font-size: 18px;
+	width: 50%;
+	color: var(--green-bright);
+	margin-block-end: 0em;
+}
+
+.college h5 {
+	position: relative;
+	bottom: 12px;
+	width: 50%;
+	font-size: 16px;
+	color: var(--lightest-slate);
+	font-style: italic;
+	margin-block-start: 0em;
+	text-align: start;
+	margin-block-end: 0em;
+}
+
+.college p {
+	position: relative;
+	bottom: 23px;
+	text-align: justify;
+	/* border: 1px solid red; */
+	/* padding: 10px; */
+	color: var(--slate);
+	margin-block-start: 0em;
+	margin-block-end: 0em;
 }

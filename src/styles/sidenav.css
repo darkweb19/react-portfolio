@@ -1,6 +1,9 @@
 .side-nav-container {
+	position: relative;
+	top: 2rem;
 	width: 20%;
-	border: 1px solid red;
+	height: 90%;
+	border-right: 2px solid var(--slate);
 }
 
 .logo img {
