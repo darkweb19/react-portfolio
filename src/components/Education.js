@@ -15,7 +15,7 @@ function Education() {
 		},
 		{
 			time: {
-				start: "July 20018",
+				start: "July 2018",
 				end: "March 2020",
 			},
 			levels: "Imtermediate in Science",
