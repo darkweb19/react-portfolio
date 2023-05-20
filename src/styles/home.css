@@ -1,57 +1,68 @@
 .home-container {
 	width: 80%;
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5rem;
+	justify-content: flex-start;
 }
+
 .intro {
-	width: 90%;
+	height: 60%;
+	display: flex;
+	margin-right: 10rem;
+	flex-direction: column;
+	width: 40%;
 }
-
-.intro h1 {
-	font-size: 4rem;
-	position: relative;
-	right: 0.8rem;
-	top: 5rem;
+.home-name {
+	font-size: 3.5rem;
+	text-align: start;
 }
-
-.typing {
-	width: 50%;
-	position: relative;
-	font-size: 32px;
-	color: var(--slate);
-	margin-left: 21%;
-}
-
-.intro h1 strong {
+.home-name strong {
 	color: var(--green-bright);
 }
 
-.about {
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	justify-content: center;
-	left: 16.8rem;
+.typing {
+	font-size: 32px;
+	text-align: start;
+	margin-top: -53px;
+	color: var(--slate);
 }
 
 .about-section {
-	position: relative;
-	bottom: 40px;
-	text-align: start;
 	font-size: 20px;
+	text-align: justify;
 	color: var(--light-slate);
-	padding: 50px;
-	height: 10vh;
 }
 
 .gmail {
-	width: 12%;
-	position: relative;
-	bottom: 30px;
-	left: 40px;
-	transition: all 0.4s;
+	width: 15%;
 }
 
-.gmail:hover {
-	scale: 1.2;
+@media only screen and (max-width: 1110px) {
+	@font-face {
+		font-family: "NTR";
+		src: url("../../public//fonts/NTR-Regular.ttf");
+	}
+	.home-container {
+		gap: 1rem;
+	}
+	.home-name {
+		/* border: 1px solid red; */
+		font-size: 1.7rem;
+	}
+	.intro {
+		margin-right: 0rem;
+		width: 90%;
+	}
+
+	.typing {
+		/* border: 1px solid red; */
+		margin-top: -20px;
+		font-size: 1.3rem;
+	}
+	.gmail {
+		width: 22%;
+	}
 }

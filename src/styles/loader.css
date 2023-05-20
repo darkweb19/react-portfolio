@@ -1,4 +1,4 @@
-windows8 {
+.windows8 {
 	position: relative;
 
 	width: 48px;
@@ -342,4 +342,81 @@ windows8 {
 		opacity: 0;
 		-moz-transform: rotate(900deg);
 	}
+}
+
+/* for mobile  */
+
+.windows7 {
+	position: relative;
+	width: 48px;
+	height: 48px;
+}
+
+.windows7 .wBall {
+	position: absolute;
+	width: 46px;
+	margin-top: 22rem;
+	margin-left: 12rem;
+	height: 46px;
+	opacity: 0;
+	transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	-webkit-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	animation: orbit 4.5325s infinite;
+	-o-animation: orbit 4.5325s infinite;
+	-ms-animation: orbit 4.5325s infinite;
+	-webkit-animation: orbit 4.5325s infinite;
+	-moz-animation: orbit 4.5325s infinite;
+}
+
+.windows7 .wBall .wInnerBall {
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: var(--white);
+	left: 0px;
+	top: 0px;
+	border-radius: 6px;
+}
+
+.windows7 #wBall_1 {
+	animation-delay: 0.986s;
+	-o-animation-delay: 0.986s;
+	-ms-animation-delay: 0.986s;
+	-webkit-animation-delay: 0.986s;
+	-moz-animation-delay: 0.986s;
+}
+
+.windows7 #wBall_2 {
+	animation-delay: 0.193s;
+	-o-animation-delay: 0.193s;
+	-ms-animation-delay: 0.193s;
+	-webkit-animation-delay: 0.193s;
+	-moz-animation-delay: 0.193s;
+}
+
+.windows7 #wBall_3 {
+	animation-delay: 0.3965s;
+	-o-animation-delay: 0.3965s;
+	-ms-animation-delay: 0.3965s;
+	-webkit-animation-delay: 0.3965s;
+	-moz-animation-delay: 0.3965s;
+}
+
+.windows7 #wBall_4 {
+	animation-delay: 0.5895s;
+	-o-animation-delay: 0.5895s;
+	-ms-animation-delay: 0.5895s;
+	-webkit-animation-delay: 0.5895s;
+	-moz-animation-delay: 0.5895s;
+}
+
+.windows7 #wBall_5 {
+	animation-delay: 0.793s;
+	-o-animation-delay: 0.793s;
+	-ms-animation-delay: 0.793s;
+	-webkit-animation-delay: 0.793s;
+	-moz-animation-delay: 0.793s;
 }

@@ -1,9 +1,13 @@
 .education-container {
+	/* font-family: "NTR";
+	font-weight: 200;
+	src: url("../../public/fonts/NTR-Regular.ttf") format("truetype"); */
 	width: 80%;
 	display: flex;
 	justify-content: center;
 	height: 100%;
 }
+
 .education {
 	width: 100%;
 	display: flex;
@@ -11,9 +15,11 @@
 	justify-content: center;
 	align-items: center;
 }
+
 .education h1 {
 	position: relative;
 	bottom: 2rem;
+
 	font-size: 2rem;
 	height: 8vh;
 }
@@ -32,7 +38,7 @@
 	display: flex;
 	max-height: 30%;
 	width: 90%;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 .duration {
@@ -44,12 +50,14 @@
 	font-weight: 600;
 	align-items: center;
 }
+
 .college {
 	padding: 0 0 0 50px;
 	height: 90%;
 	width: 70%;
 	border-left: 2px solid var(--slate);
 }
+
 .college h4 {
 	margin-block-start: 0em;
 	text-align: start;
@@ -75,9 +83,50 @@
 	position: relative;
 	bottom: 23px;
 	text-align: justify;
-	/* border: 1px solid red; */
-	/* padding: 10px; */
 	color: var(--slate);
 	margin-block-start: 0em;
 	margin-block-end: 0em;
+}
+
+@media only screen and (max-width: 788px) {
+	.education {
+		justify-content: start;
+	}
+	.education h1 {
+		position: relative;
+		bottom: 2rem;
+		top: 3rem;
+		font-size: 1.3rem;
+		height: 4vh;
+	}
+	.education-row {
+		height: 20vh;
+	}
+	.education-section {
+		position: relative;
+		top: 4rem;
+		height: 70vh;
+		justify-content: space-evenly;
+	}
+	.duration {
+		position: relative;
+		right: 10px;
+		font-size: 9px;
+	}
+	.college {
+		padding: 0 0 0 10px;
+	}
+	.college h4 {
+		font-size: 10px;
+		width: 100%;
+	}
+	.college h5 {
+		width: 100%;
+		font-size: 9px;
+		bottom: 9px;
+	}
+	.college p {
+		font-size: 10px;
+		bottom: 4px;
+	}
 }

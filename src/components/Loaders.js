@@ -1,26 +1,11 @@
 import React from "react";
 import "../styles/loader.css";
+import { useMediaQuery } from "react-responsive";
+import Windows from "../pages/Windows";
 
 function Loaders() {
-	return (
-		<div className="windows8">
-			<div className="wBall" id="wBall_1">
-				<div className="wInnerBall"></div>
-			</div>
-			<div className="wBall" id="wBall_2">
-				<div className="wInnerBall"></div>
-			</div>
-			<div className="wBall" id="wBall_3">
-				<div className="wInnerBall"></div>
-			</div>
-			<div className="wBall" id="wBall_4">
-				<div className="wInnerBall"></div>
-			</div>
-			<div className="wBall" id="wBall_5">
-				<div className="wInnerBall"></div>
-			</div>
-		</div>
-	);
+	const isMobile = useMediaQuery({ maxWidth: 767 });
+	return <>{isMobile ? <Windows size="7" /> : <Windows size="8" />}</>;
 }
 
 export default Loaders;

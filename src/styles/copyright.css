@@ -12,3 +12,15 @@
 	position: relative;
 	bottom: 14px;
 }
+
+@media only screen and (max-width: 600px) {
+	.copyright {
+		bottom: 5px;
+	}
+	.rightname {
+		padding: 5px;
+	}
+	.rights {
+		bottom: 20px;
+	}
+}

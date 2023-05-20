@@ -46,3 +46,15 @@
 
 	color: var(--white);
 }
+
+@media only screen and (max-width: 660px) {
+	.creation-container {
+		width: 67%;
+		height: 90%;
+		border: 2px solid red;
+	}
+	.carousel-container {
+		width: 90%;
+		border: 1px solid red;
+	}
+}

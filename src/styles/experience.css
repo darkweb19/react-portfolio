@@ -1,0 +1,42 @@
+.experience-container {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.hire {
+	width: 50%;
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hire h1 span {
+	font-size: 2.5rem;
+	color: var(--green-bright);
+}
+
+@media only screen and (max-width: 660px) {
+	.experience-container {
+		display: flex;
+		height: 80%;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.experience-container h1 {
+		position: relative;
+		margin-top: 3rem;
+	}
+	.hire {
+		width: 90%;
+		font-size: 15px;
+		padding: 10px;
+	}
+	.hire h1 span {
+		font-size: 2rem;
+	}
+}
