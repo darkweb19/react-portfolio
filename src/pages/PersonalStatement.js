@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/personal.css";
 
 function PersonalStatement({ image }) {
 	//returns divs of personal statements

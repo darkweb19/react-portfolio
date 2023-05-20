@@ -26,12 +26,12 @@ function AnimationLists() {
 	const uuid = () => v4();
 
 	const skills = [
-		{ id: uuid(), skill: "JavaScript", icon: <FaJs /> },
-		{ id: uuid(), skill: "Python", icon: <FaPython /> },
 		{ id: uuid(), skill: "React.js", icon: <FaReact /> },
 		{ id: uuid(), skill: "Node.js", icon: <FaNodeJs /> },
-		{ id: uuid(), skill: "Express.js", icon: <SiExpress /> },
+		{ id: uuid(), skill: "Python", icon: <FaPython /> },
 		{ id: uuid(), skill: "Mongo", icon: <SiMongodb /> },
+		{ id: uuid(), skill: "JavaScript", icon: <FaJs /> },
+		{ id: uuid(), skill: "Express.js", icon: <SiExpress /> },
 	];
 
 	//returns skill lists through animation

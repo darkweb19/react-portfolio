@@ -13,7 +13,7 @@ function Experience() {
 			<h1>Experience /-</h1>
 			<div className="hire">
 				<h1>
-					<span>Hire</span> me for having experience :)
+					<span>Hire</span> me to gain experiences :)
 				</h1>
 			</div>
 		</motion.div>
