@@ -1,11 +1,21 @@
 import React from "react";
 import "../styles/loader.css";
-import { useMediaQuery } from "react-responsive";
-import Windows from "../pages/Windows";
+import { ClipLoader } from "react-spinners";
 
 function Loaders() {
-	const isMobile = useMediaQuery({ maxWidth: 767 });
-	return <>{isMobile ? <Windows size="7" /> : <Windows size="8" />}</>;
+	return (
+		<div className="loader">
+			<ClipLoader
+				color="#64ffda"
+				size={60}
+				speedMultiplier={0.5}
+				cssOverride={{
+					alignItems: "center",
+					justifyContent: "center",
+				}}
+			/>
+		</div>
+	);
 }
 
 export default Loaders;
