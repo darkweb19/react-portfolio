@@ -6,9 +6,9 @@ import dallE from "../images/Dall-E.png";
 import ssrPng from "../images/SSR-Blog.png";
 import image from "../images/image.png";
 import minePort from "../images/portfolio.png";
-import Socials from "./Socials";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import IosShareIcon from "@mui/icons-material/IosShare";
+import { motion } from "framer-motion";
 
 function Carousels() {
 	const uuid = () => v4;
@@ -56,29 +56,21 @@ function Carousels() {
 			{images.map((item) => (
 				<div className="carousel-items" key={item.id}>
 					<img src={item.image} alt="nothing" />
-					<p className="para">
-						<Socials
-							className="social-links carousel"
-							social={
-								<GitHubIcon
-									sx={{ fontSize: 30 }}
-									color="primary"
-								/>
-							}
-							link={item.link}
-						/>
-						<Socials
-							className="social-links carousel"
-							social={
-								<IosShareIcon
-									sx={{ fontSize: 30 }}
-									color="primary"
-								/>
-							}
-							link={item.share}
-						/>
+					<div className="div-para">
+						<motion.div
+							className="carousel-links"
+							onClick={() => window.open(item.link)}
+						>
+							<GitHubIcon />
+						</motion.div>
+						<motion.div
+							className="carousel-links"
+							onClick={() => window.open(item.share)}
+						>
+							<IosShareIcon />
+						</motion.div>
 						<p className="name">{item.name}</p>
-					</p>
+					</div>
 				</div>
 			))}
 		</Carousel>

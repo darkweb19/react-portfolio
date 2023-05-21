@@ -42,8 +42,8 @@ function Education() {
 			<div className="education">
 				<h1>Educations /-</h1>
 				<div className="education-section">
-					{educationData.map((item) => (
-						<div className="education-row">
+					{educationData.map((item, index) => (
+						<div className="education-row" key={index}>
 							<div className="duration">
 								{item.time.start}
 								<br />

@@ -53,6 +53,9 @@
 	.home-container {
 		gap: 1rem;
 	}
+	.home-container h1 {
+		margin-top: 4rem;
+	}
 	.home-name {
 		/* border: 1px solid red; */
 		font-size: 1.7rem;

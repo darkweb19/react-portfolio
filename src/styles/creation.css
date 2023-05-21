@@ -4,16 +4,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 .creation-container h1 {
 	margin-top: 3rem;
 }
 
 .carousel-container {
-	width: 80%;
-	position: relative;
-	height: 100%;
+	width: 70%;
+	height: 80%;
 }
 
 .carousel-items img {
@@ -30,31 +29,60 @@
 	bottom: 30px;
 }
 
-.para {
-	width: 90%;
+.div-para {
+	width: 100%;
 	display: flex;
-	height: 8vh;
+	height: 7vh;
+	align-items: center;
+	justify-content: center;
+}
+.carousel-links {
+	cursor: pointer;
+	margin: 10px 10px;
+	color: var(--slate);
+	height: 80%;
+	display: flex;
+	align-items: center;
+	transition: all 0.2s;
+}
+
+.carousel-links:hover {
+	scale: 1.2;
 }
 
 .name {
 	font-size: 23px;
-	width: 90%;
-	position: relative;
-	bottom: 20px;
+	width: 60%;
+	height: 80%;
+	padding: 10px;
+	margin-top: 2px;
 	font-weight: 600;
 	text-align: start;
-
 	color: var(--white);
 }
 
 @media only screen and (max-width: 660px) {
 	.creation-container {
 		width: 67%;
-		height: 90%;
-		border: 2px solid red;
+		height: 87%;
 	}
 	.carousel-container {
-		width: 90%;
-		border: 1px solid red;
+		width: 100%;
+	}
+	.carousel-items img {
+		height: 30vh;
+		object-fit: contain;
+	}
+	.thumbs-wrapper {
+		position: absolute;
+		display: none;
+	}
+	.carousel-links {
+		margin: 2px 2px;
+	}
+
+	.name {
+		font-weight: 500;
+		font-size: 18px;
 	}
 }
