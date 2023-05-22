@@ -24,7 +24,6 @@
 }
 
 .links {
-	/* border: 1px solid red; */
 	font-weight: 500;
 	width: 40%;
 	text-align: start;
@@ -41,7 +40,6 @@
 .socials {
 	height: 20vh;
 	display: flex;
-	/* align-items: center; */
 	justify-content: center;
 }
 
@@ -65,10 +63,10 @@
 	}
 	.nav-links {
 		padding: 10px;
-		height: 40%;
+		height: 50%;
 	}
 	.links {
-		width: 80%;
+		width: 90%;
 		margin-left: 0.5rem;
 	}
 	.socials {
