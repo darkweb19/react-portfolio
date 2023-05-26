@@ -38,7 +38,7 @@ function SideNav() {
 		},
 		{
 			social: <CoffeeIcon sx={{ fontSize: 30 }} color="primary" />,
-			link: "https://",
+			link: "https://https://www.buymeacoffee.com/woofoo",
 		},
 	];
 
