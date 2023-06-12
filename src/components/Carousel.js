@@ -43,7 +43,7 @@ function Carousels() {
 			name: "Website using pure html css and js",
 			desc: " ",
 			link: "https://github.com/darkweb19/Portfolio-Website",
-			share: "https://github.com/darkweb19/Portfolio-Website",
+			share: "https://darkweb19.github.io/Portfolio-Website/New%20Portfolio/",
 		},
 	];
 	return (
