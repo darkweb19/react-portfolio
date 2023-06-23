@@ -58,4 +58,5 @@ function Home() {
 		</motion.div>
 	);
 }
+
 export default Home;

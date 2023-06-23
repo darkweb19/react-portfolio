@@ -1,10 +1,13 @@
 .copyright {
 	position: relative;
-	bottom: 10px;
+	bottom: 60px;
 	color: var(--slate);
 	font-weight: 500;
 }
-
+.openSource a {
+	text-decoration: none;
+	color: var(--green-bright);
+}
 .rightname {
 	font-size: 16px;
 }
@@ -15,12 +18,16 @@
 
 @media only screen and (max-width: 600px) {
 	.copyright {
-		bottom: 5px;
+		bottom: 3px;
+		font-size: 12px;
 	}
+
 	.rightname {
 		padding: 5px;
+		font-size: 12px;
 	}
 	.rights {
 		bottom: 22px;
+		font-size: 12px;
 	}
 }
