@@ -18,7 +18,7 @@ function App() {
 		}, 2500);
 	}
 
-	//automatically redirects to home page if pathname == / so there is no / path in out website
+	//automatically redirects to home page if pathname == / so there is no / path in our website
 	useEffect(() => {
 		if (location.pathname === "/") {
 			navigate("/home");
