@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../styles/sidenav.css";
-import { useLocation } from "react-router-dom";
 import logo from "../images/mine.png";
 import Socials from "./Socials";
 import { v4 } from "uuid";
