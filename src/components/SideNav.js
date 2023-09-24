@@ -19,7 +19,7 @@ function SideNav() {
 		{ id: uuid(), link: "/Education" },
 		{ id: uuid(), link: "/Statement" },
 		{ id: uuid(), link: "/Experience" },
-		{ id: uuid(), link: "/Software-creation" },
+		{ id: uuid(), link: "/Creations" },
 	];
 
 	const socials = [
