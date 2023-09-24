@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { v4 } from "uuid";
 import dallE from "../images/Dall-E.png";
+import twitter from "../images/twitter.png";
 import ssrPng from "../images/SSR-Blog.png";
 import image from "../images/image.png";
 import minePort from "../images/portfolio.png";
@@ -15,11 +16,11 @@ function Carousels() {
 	const images = [
 		{
 			id: uuid(),
-			image: image,
-			name: "A minimal Image Portfolio",
+			image: twitter,
+			name: "Full Stack Twitter Clone using Next Js ",
 			desc: " ",
-			link: "https://github.com/darkweb19/image",
-			share: "https://darkweb19.github.io/image/imageGalary/",
+			link: "https://github.com/darkweb19/twitter-clone",
+			share: "",
 		},
 		{
 			id: uuid(),
@@ -29,6 +30,15 @@ function Carousels() {
 			link: "https://github.com/darkweb19/",
 			share: "",
 		},
+		{
+			id: uuid(),
+			image: image,
+			name: "A minimal Image Portfolio",
+			desc: " ",
+			link: "https://github.com/darkweb19/image",
+			share: "https://darkweb19.github.io/image/imageGalary/",
+		},
+
 		{
 			id: uuid(),
 			image: ssrPng,
