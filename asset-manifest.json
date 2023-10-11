@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.c089389d.css",
-    "main.js": "/react-portfolio/static/js/main.6fd9f094.js",
+    "main.css": "/react-portfolio/static/css/main.1102a138.css",
+    "main.js": "/react-portfolio/static/js/main.e296bb70.js",
     "static/media/image.png": "/react-portfolio/static/media/image.52f5e442bb7a1471a231.png",
     "static/media/portfolio.png": "/react-portfolio/static/media/portfolio.ce978654032b8c3f3ec2.png",
     "static/media/my-image.png": "/react-portfolio/static/media/my-image.191a729274d8356c1193.png",
     "static/media/Dall-E.png": "/react-portfolio/static/media/Dall-E.3025fdfa714699f036b8.png",
     "static/media/NTR-Regular.ttf": "/react-portfolio/static/media/NTR-Regular.96839eb7b68e4482d73d.ttf",
+    "static/media/twitter.png": "/react-portfolio/static/media/twitter.e73194ef3f0cc543981b.png",
     "static/media/SSR-Blog.png": "/react-portfolio/static/media/SSR-Blog.8d0849121470e48a6d38.png",
     "static/media/mine.png": "/react-portfolio/static/media/mine.02f54d3e53d9f914f20f.png",
     "index.html": "/react-portfolio/index.html",
-    "main.c089389d.css.map": "/react-portfolio/static/css/main.c089389d.css.map",
-    "main.6fd9f094.js.map": "/react-portfolio/static/js/main.6fd9f094.js.map"
+    "main.1102a138.css.map": "/react-portfolio/static/css/main.1102a138.css.map",
+    "main.e296bb70.js.map": "/react-portfolio/static/js/main.e296bb70.js.map"
   },
   "entrypoints": [
-    "static/css/main.c089389d.css",
-    "static/js/main.6fd9f094.js"
+    "static/css/main.1102a138.css",
+    "static/js/main.e296bb70.js"
   ]
 }
